@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuttle</title>
+    <link rel="stylesheet" href="assets/css/style_Login.css">
+   
+    <script href="../JS/login.js.js"></script>
+
+</head>
+
+<body>
+    <section class="forms-section">
+        <h1 class="section-title">Shuttle</h1>
+        <div class="forms">
+            <div class="form-wrapper is-active">
+                <button type="button" class="switcher switcher-login">
+                    Login
+                    <span class="underline"></span>
+                </button>
+                <form class="form form-login">
+                    <fieldset>
+                        <legend>Please, enter your email and password for login.</legend>
+                        <div class="input-block">
+                            <label for="login-email">Usename</label>
+                            <input id="" type="username" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="login-password">Password</label>
+                            <input id="" type="password" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="login-password">Token</label>
+                            <input id="" type="password" required>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn-login">Login</button>
+                </form>
+            </div>
+            <div class="form-wrapper">
+                <button type="button" class="switcher switcher-signup">
+                    Sign Up
+                    <span class="underline"></span>
+                </button>
+                <form class="form form-signup">
+                    <fieldset>
+                        <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                        <div class="input-block">
+                            <label for="signup-email">Primeiro Nome</label>
+                            <input id="" type="Primeiro nome" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-email">Apelido</label>
+                            <input id="" type="apelido" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-email">Data de nascimento</label>
+                            <input id="signup-email" type="date" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-email">Telemovel</label>
+                            <input id="signup-email" type="number" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-email">E-mail</label>
+                            <input id="signup-email" type="email" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-password">username</label>
+                            <input id="signup-password" type="username" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-password-confirm"> password</label>
+                            <input id="signup-password-confirm" type="password" required>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn-signup">Continue</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+<script>
+    
+
+const switchers = [...document.querySelectorAll('.switcher')]
+
+switchers.forEach(item => {
+	item.addEventListener('click', function() {
+		switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+		this.parentElement.classList.add('is-active')
+	})
+})
+
+</script>
+
+
+
+
+</html>

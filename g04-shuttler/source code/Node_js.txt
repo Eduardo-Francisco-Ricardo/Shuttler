@@ -1,0 +1,3 @@
+npm i express speakeasy uuid node-json-db
+npm i -D nodemon
+npm start
